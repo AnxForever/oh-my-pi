@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed sessions getting stuck on HTTP 400 from Bedrock and other strict providers after the model called a nonexistent tool whose name contains characters like `/` or `*` (e.g. `proc://*`) ([#15839](https://github.com/can1357/oh-my-pi/issues/15839))
+
 ## [18.11.0] - 2026-10-14
 
 ### Fixed
